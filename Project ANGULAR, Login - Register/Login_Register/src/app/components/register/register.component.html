@@ -1,0 +1,43 @@
+<!-- da se dodadat propertinja ime in prezime -->
+
+<form [formGroup]="registerForm" (ngSubmit)="submit()">
+  <!-- Input za firstName  -->
+  <mat-form-field>
+    <mat-label>Enter your name</mat-label>
+    <input matInput placeholder="Michael" type="text" formControlName="firstName" />
+  </mat-form-field>
+
+  <!-- Input za lastName -->
+  <mat-form-field>
+    <mat-label>Enter your last name</mat-label>
+    <input matInput placeholder="Mayers" type="text" formControlName="lastName" />
+  </mat-form-field>
+
+  <!-- Input za userName -->
+  <mat-form-field>
+    <mat-label>Enter your Username</mat-label>
+    <input matInput placeholder="AI_Pic_Generator" type="text" formControlName="userName" />
+  </mat-form-field>
+
+  <!--Input za email  -->
+  <mat-form-field>
+    <mat-label>Enter your e-mail</mat-label>
+    <input matInput placeholder="Michael_Myers@example.com" type="email" formControlName="email" />
+  </mat-form-field>
+
+  <!-- input za cardNumber -->
+  <mat-form-field>
+    <mat-label>Enter your Cardnumber</mat-label>
+    <input matInput placeholder="2080-****-****-2080" type="number" formControlName="cardNumber" />
+  </mat-form-field>
+
+  <!-- Treba da se dodade input i za expirationDate i kako properti da se dodade sekade vo requestbodito-->
+
+  <!-- INput za password -->
+  <mat-form-field>
+    <mat-label>Enter your password</mat-label>
+    <input matInput placeholder="Pas$wOrd" type="password" formControlName="password" />
+  </mat-form-field>
+
+  <button mat-raised-button>Register</button>
+</form>
